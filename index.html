@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minerva | Login Joy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto+Flex:wght@100;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .animate-float { animation: float 5s ease-in-out infinite; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        .font-flex { font-family: 'Roboto Flex', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#f8f9ff] min-h-screen flex items-center justify-center overflow-hidden font-flex">
+
+    <div class="absolute right-[-10%] top-0 h-full w-[600px] opacity-[0.08] pointer-events-none z-0">
+        <img src="img/Joy MLBB HD _[Feline Ranger].jpg" alt="" class="h-full object-cover">
+    </div>
+
+    <div class="relative w-full max-w-[1100px] h-[750px] bg-white rounded-[40px] shadow-[0_50px_100px_-20px_rgba(114,87,255,0.15)] flex overflow-hidden z-10 border border-white">
+        
+        <div class="hidden lg:flex w-5/12 bg-gradient-to-br from-[#7257ff] to-[#4e36d3] relative items-center justify-center overflow-hidden">
+            <div class="absolute top-[-10%] left-[-10%] w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-80 h-80 bg-black/10 rounded-full blur-3xl"></div>
+            
+            <img src="img/Joy MLBB HD _[Feline Ranger].jpg" 
+                 alt="Joy MLBB" 
+                 class="relative z-10 w-full h-full object-cover animate-float drop-shadow-2xl">
+        </div>
+
+        <div class="w-full lg:w-7/12 p-12 flex flex-col justify-center relative bg-white">
+            
+            <div class="text-center lg:text-left mb-8">
+                <h1 class="font-roboto text-4xl font-bold text-gray-900 tracking-tight mb-3">WELCOME BACK TO JOY</h1>
+                <p class="text-gray-400 font-semibold text-sm leading-relaxed uppercase tracking-wider">
+                    Build your design system effortlessly <br class="hidden sm:block"> powerful component library
+                </p>
+            </div>
+
+            <form action="#" class="space-y-5 max-w-[450px] mx-auto lg:mx-0">
+                <div class="space-y-1">
+                    <label class="text-xs font-bold text-indigo-900/50 uppercase ml-4">Email</label>
+                    <div class="group relative">
+                        <input type="email" 
+                               placeholder="JoyYebYeb@gmail.com" 
+                               class="w-full px-6 py-4 bg-gray-50 border-2 border-transparent rounded-2xl focus:border-[#7257ff] focus:bg-white focus:ring-4 focus:ring-purple-100 transition-all outline-none text-gray-800 font-medium">
+                    </div>
+                </div>
+
+                <div class="space-y-1">
+                    <label class="text-xs font-bold text-indigo-900/50 uppercase ml-4">Password</label>
+                    <input type="password" 
+                           placeholder="**********" 
+                           class="w-full px-6 py-4 bg-gray-50 border-2 border-transparent rounded-2xl focus:border-[#7257ff] focus:bg-white focus:ring-4 focus:ring-purple-100 transition-all outline-none text-gray-800 font-medium">
+                </div>
+
+                <div class="flex items-center justify-between px-2">
+                    <div class="flex items-center gap-3 group cursor-pointer">
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer">
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#7257ff]"></div>
+                        </label>
+                        <span class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Remember me</span>
+                    </div>
+                    <a href="#" class="text-sm font-bold text-[#7257ff] hover:text-indigo-800 underline-offset-4 hover:underline">Forgot Password?</a>
+                </div>
+
+                <div class="space-y-4 pt-4">
+                    
+                    <button onclick="window.location.href='index.html'" type="button" 
+                            class="w-full py-4 bg-[#7257ff] hover:bg-[#5e44e6] text-white rounded-2xl font-bold text-lg shadow-lg shadow-purple-200 transition-all transform hover:-translate-y-1 active:scale-95">
+                        LOGIN
+                    </button>
+
+                    <div class="flex items-center gap-4 text-gray-400 py-2">
+                        <div class="h-[1px] flex-grow bg-gray-100"></div>
+                        <span class="text-sm font-bold italic">or</span>
+                        <div class="h-[1px] flex-grow bg-gray-100"></div>
+                    </div>
+
+                    <button type="button" 
+                            class="w-full py-4 bg-[#f4f6f8] hover:bg-gray-200 text-gray-800 rounded-2xl font-bold text-sm flex items-center justify-center gap-3 transition-all border border-gray-100">
+                        <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" class="w-5 h-5" alt="">
+                        Continue with Google
+                    </button>
+                </div>
+            </form>
+
+            <div class="mt-10 text-center lg:text-left">
+                <p class="text-sm font-bold text-gray-400">
+                    Don't have an account? 
+                    <a href="signup.html" class="text-[#7257ff] hover:underline ml-1">Sign Up</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cakra Design | Sign Up Aspirants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Great+Vibes&family=Roboto+Flex:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes kenburns {
+            0% { transform: scale(1) translate(0, 0); }
+            50% { transform: scale(1.1) translate(-2%, -2%); }
+            100% { transform: scale(1) translate(0, 0); }
+        }
+        .animate-hero { animation: kenburns 30s ease infinite; }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px rgba(11, 194, 255, 0.8), 0 0 20px rgba(11, 194, 255, 0.4);
+        }
+
+        .cyber-input {
+            background: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .cyber-input:focus {
+            background: rgba(255, 255, 255, 1);
+            transform: translateX(10px);
+            box-shadow: -5px 0 0 #0bc2ff;
+        }
+    </style>
+</head>
+<body class="bg-black min-h-screen flex items-center justify-center font-['Inter'] overflow-hidden relative">
+
+    <div class="absolute inset-0 z-0">
+        <img src="img/MLBB Aspirants Layla & Fanny Header.jpg" 
+             class="w-full h-full object-cover animate-hero opacity-60" alt="MLBB Aspirants">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent"></div>
+    </div>
+
+    <main class="relative z-10 w-full max-w-6xl p-6 flex flex-col lg:flex-row items-center gap-12">
+        
+        <div class="glass-card w-full lg:w-[650px] p-10 rounded-[40px] border-l-4 border-l-[#0bc2ff]">
+            
+            <div class="mb-6">
+                <h2 class="font-['Great_Vibes'] text-5xl text-white neon-text">Cakra Design</h2>
+            </div>
+
+            <div class="mb-10">
+                <h1 class="text-4xl font-bold text-[#25dee7] tracking-tight uppercase">Let's get started</h1>
+                <p class="text-gray-200 text-sm mt-2 opacity-80">By signing up, I agree to Cakra's Design Terms & Privacy Policy.</p>
+            </div>
+
+            <form action="#" class="space-y-4">
+                
+                <button type="button" class="w-full bg-white hover:bg-gray-100 py-4 rounded-xl flex items-center justify-center gap-4 transition-all transform hover:scale-[1.02] group">
+                    <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-02-11/tCht1qmULQ.png" class="w-6 h-6" alt="Google">
+                    <span class="text-black font-bold group-hover:tracking-widest transition-all">Sign up with Google</span>
+                </button>
+
+                <div class="flex items-center gap-4 py-2">
+                    <div class="h-[1px] flex-grow bg-white/20"></div>
+                    <span class="text-white text-xs font-bold uppercase tracking-widest opacity-60">OR</span>
+                    <div class="h-[1px] flex-grow bg-white/20"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="email" placeholder="Enter email address" class="cyber-input w-full px-6 py-4 rounded-xl outline-none text-black font-medium">
+                    <input type="text" placeholder="Enter username" class="cyber-input w-full px-6 py-4 rounded-xl outline-none text-black font-medium">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="password" placeholder="Enter password" class="cyber-input w-full px-6 py-4 rounded-xl outline-none text-black font-medium">
+                    <input type="password" placeholder="Confirm password" class="cyber-input w-full px-6 py-4 rounded-xl outline-none text-black font-medium">
+                </div>
+                <button onclick="window.location.href='index.html'" type="button" class="w-full bg-[#0bc2ff] hover:bg-[#00e1ff] py-4 rounded-xl text-white font-black text-xl shadow-[0_0_20px_rgba(11,194,255,0.4)] transition-all transform hover:-translate-y-1 active:scale-95 mt-4">
+                    SIGN UP
+                </button>
+            </form>
+        </div>
+
+        <div class="hidden lg:block flex-1 text-white">
+            <div class="bg-black/40 backdrop-blur-md p-8 rounded-3xl border border-white/10 space-y-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-[#0bc2ff] rounded-full flex items-center justify-center shadow-[0_0_15px_#0bc2ff]">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Aspirants Access</h4>
+                        <p class="text-sm text-gray-300">Unlock premium design components.</p>
+                    </div>
+                </div>
+                
+                <div class="pt-6 border-t border-white/10 flex items-center justify-between">
+                    <p class="text-gray-300 font-medium">Already have an account?</p>
+                    <a href="login.html" class="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full font-bold transition-all border border-white/20">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="absolute bottom-6 lg:hidden z-20">
+        <p class="text-white text-sm font-bold">
+            Already have an account? <a href="login.html" class="text-[#0bc2ff] ml-1 underline">Sign In</a>
+        </p>
+    </div>
+
+</body>
+</html>
